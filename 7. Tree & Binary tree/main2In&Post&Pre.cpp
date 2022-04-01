@@ -1,21 +1,23 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define ll long long int
-const ll mod=1e9+7;
-#define take_input freopen("input.txt","r",stdin),freopen("output.txt","w",stdout);
-#define fast ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0);
+// #define long long int long long int 
+const long long int mod = 1e9+7;
+// #define take_input freopen("input.txt","r",stdin),freopen("output.txt","w",stdout);
+// #define fast ios_base::sync_with_stdio(false),cin.tie(0),cout.tie(0);
 
 class tree{
 public:
-	ll val;
-	tree *left,*right;
+	long long int val;
+	tree *left;
+	tree *right;
 
-	tree(ll value)
+	tree(long long int value)
 	{
 		this->val=value;
-		this->left=this->right=NULL;
+		this->left=NULL;//left node traval
+		this->right=NULL;//right node traval
 	}
-	tree *insert(ll value,tree *root)
+	tree *insert(long long int value, tree *root)
 	{
 		if(root==NULL)
 			return new tree(value);
