@@ -6,7 +6,8 @@ void findPair(int num[],int n,int target){
 
     for(int i=0;i<n;i++){
         if(mp.find(target - num[i])!= mp.end()){
-            cout<<num[mp[target-num[i]]]<<num[i];
+            cout<<num[mp[target-num[i]]]<<" ";
+            cout<<num[i]<<endl;
             return;
         }
         mp[num[i]]=i;

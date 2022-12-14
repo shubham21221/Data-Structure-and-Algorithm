@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class Solution {
-public:
+// class Solution {
+// public:
 vector<int> twoSum(vector<int> &num, int target)
 {
     unordered_map<int, int> mp;
@@ -20,7 +20,7 @@ vector<int> twoSum(vector<int> &num, int target)
     }
     return res;
 }
-};
+// };
 
 int main()
 {
@@ -29,8 +29,8 @@ int main()
     v.push_back(6);
     v.push_back(8);
 
-    Solution obj;
-    obj.twoSum(v,1);
+    // Solution obj;
+    twoSum(v,1);
 
     return 0;
 }
